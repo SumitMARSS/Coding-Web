@@ -11,7 +11,7 @@ import "../../App.css"
 // Icons
 import { FaStar } from "react-icons/fa"
 // Import required modules
-import { Autoplay, FreeMode, Pagination } from "swiper"
+import { Autoplay, FreeMode, Pagination } from "swiper";
 
 // Get apiFunction and the endpoint
 import { apiConnector } from "../../services/apiConnector"
@@ -36,8 +36,8 @@ function ReviewSlider() {
   // console.log(reviews)
 
   return (
-    <div className="text-white">
-      <div className="my-[50px] h-[184px] max-w-maxContentTab lg:max-w-maxContent">
+    <div className="text-white w-full">
+      <div className=" w-full my-[50px] h-[184px] max-w-maxContentTab lg:max-w-maxContent">
         <Swiper
           slidesPerView={4}
           spaceBetween={25}
@@ -53,7 +53,7 @@ function ReviewSlider() {
           {reviews.map((review, i) => {
             return (
               <SwiperSlide key={i}>
-                <div className="flex flex-col gap-3 bg-richblack-800 p-3 text-[14px] text-richblack-25">
+                <div className="flex flex-col gap-3 bg-richblack-800 p-3 text-[14px] text-richblack-25 ">
                   <div className="flex items-center gap-4">
                     <img
                       src={
@@ -71,7 +71,7 @@ function ReviewSlider() {
                       </h2>
                     </div>
                   </div>
-                  <p className="font-medium text-richblack-25">
+                  <p className="font-medium text-richblack-25 ">
                     {review?.review.split(" ").length > truncateWords
                       ? `${review?.review
                           .split(" ")
@@ -97,7 +97,7 @@ function ReviewSlider() {
               </SwiperSlide>
             )
           })}
-          <SwiperSlide></SwiperSlide>
+          <SwiperSlide></SwiperSlide> 
           {/* <SwiperSlide>Slide 1</SwiperSlide> */}
         </Swiper>
       </div>
