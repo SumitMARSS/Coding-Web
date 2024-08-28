@@ -105,6 +105,23 @@ exports.getAverageRating = async (req, res) => {
   }
 }
 
+//using polymorphism so that we can use multiple form of rating system 
+
+// const handlePrint = (...args) => {
+//   if (args.length === 1) {
+//       const arg = args[0];
+//       if (typeof arg === 'number') {
+//           return `Printing number: ${arg}`;
+//       } else if (typeof arg === 'string') {
+//           return `Printing string: ${arg}`;
+//       }
+//   } else if (args.length === 2) {
+//       return `Printing two arguments: ${args[0]}, ${args[1]}`;
+//   } else {
+//       return 'Invalid number of arguments';
+//   }
+// };
+
 // Get all rating and reviews
 exports.getAllRatingReview = async (req, res) => {
   try {
