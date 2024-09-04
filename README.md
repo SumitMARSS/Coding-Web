@@ -1,5 +1,5 @@
 
-# MERN E-Learning Platform
+# Coding Learning Platform - CODEWEB
 
 ## Overview
 
