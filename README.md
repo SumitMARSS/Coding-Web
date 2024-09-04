@@ -1,5 +1,5 @@
 
-# Coding Learning Platform - CODEWEB
+# Code Learning Platform - CODEWEB
 
 ## Overview
 
